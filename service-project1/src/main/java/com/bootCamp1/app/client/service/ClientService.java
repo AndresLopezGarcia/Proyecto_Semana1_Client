@@ -8,11 +8,12 @@ public interface ClientService {
 	
 	public List<Client> findAll();
 	
-	public Client findById(Long id);
+	public Client findById(String id);
 	
-	public void save(Client client);
-	//public Client save(Client client);
+	//public void save(Client client);
+	public Client save(Client client);
 	
-	public void delete(Client client);
+	//public void delete(Client client);
+	public void delete(String id);
 
 }

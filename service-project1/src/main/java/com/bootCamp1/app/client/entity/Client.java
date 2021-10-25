@@ -17,7 +17,7 @@ import lombok.NoArgsConstructor;
 public class Client implements Serializable{
 
 	@Id
-	private Long id;
+	private String id;
 	
 	@Field("name")
 	private String name;

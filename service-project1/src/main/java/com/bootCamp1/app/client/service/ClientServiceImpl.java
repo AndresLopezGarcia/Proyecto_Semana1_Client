@@ -24,23 +24,34 @@ public class ClientServiceImpl implements ClientService {
 
 	@Override
 	@Transactional (readOnly = true)
-	public Client findById(Long id) {
+	public Client findById(String id) {
 
 		return clientRepository.findById(id).orElse(null);
 	}
 
 	@Override
 	@Transactional
-	public void save(Client client) {
+	/*
+	 * public void save(Client client) {
+	 * 
+	 * clientRepository.save(client); }
+	 */
+	
+	public Client save(Client client) {
 
-		clientRepository.save(client);
+		return clientRepository.save(client);
 	}
 
 	@Override
 	@Transactional
-	public void delete(Client client) {
+	/*
+	 * public void delete(Client client) {
+	 * 
+	 * clientRepository.delete(client); }
+	 */
+	public void delete(String id) {
 
-		clientRepository.delete(client);
+		clientRepository.deleteById(id);
 	}
 
 }
