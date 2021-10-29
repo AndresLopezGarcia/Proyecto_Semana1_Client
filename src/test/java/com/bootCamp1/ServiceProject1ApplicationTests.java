@@ -1,0 +1,13 @@
+package com.bootCamp1;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class ServiceProject1ApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}
